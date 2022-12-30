@@ -34,6 +34,8 @@ Code of PASE is in the directory **postgresql-11.0/contrib/pase**.
 
 * **utils:** Util functions used in PASE
 
+We implemented index IVF_PQ in PASE and the code is in **postgresql-11.0/contrib/pase/ivfpq**.
+
 # Prerequisite
 
 OpenMP 4.0.1
@@ -233,19 +235,19 @@ This work investigates the performance difference between specialized vector dat
 
 We summarize the root causes of the performance gap as follows and discuss how to bridge the gap:
 
-* **RC#1: SGEMM Optimization.**
+* **RC#1: Data Ingestion Model.**
 
-* **RC#2: MemoryManagement.**
+* **RC#2: Memory Management.**
 
 * **RC#3: Parallel Execution.**
 
-* **RC#4: Disk-centric Page Structure.**
+* **RC#4: Memory-centric Page Structure.**
 
 * **RC#5: K-means Implementation.**
 
-* **RC#6: Top-k Evaluation in SQL.**
+* **RC#6: SQL Evaluation Model.**
 
-* **RC#7: Precomputed Table.**
+* **RC#7: Precomputed Table Implementation.**
 
 
 Overall Message. The overall conclusion of this work is that, for now, generalized vector databases are still much slower than specialized vector databases. Thus, we recommend specialized vector databases for applications that need to manage vector data. However, we see a large room for improvement for generalized vector databases. In the long term, we are still positive that generalized vector databases can be improved up to the speed.
