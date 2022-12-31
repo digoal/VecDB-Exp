@@ -250,4 +250,8 @@ We summarize the root causes of the performance gap as follows and discuss how t
 * **RC#7: Precomputed Table Implementation.**
 
 
-Overall Message. The overall conclusion of this work is that, for now, generalized vector databases are still much slower than specialized vector databases. Thus, we recommend specialized vector databases for applications that need to manage vector data. However, we see a large room for improvement for generalized vector databases. In the long term, we are still positive that generalized vector databases can be improved up to the speed.
+Overall Message. The overall conclusion of this work is that, for
+now, specialized vector databases are still much faster than generalized vector databases. Thus, we recommend specialized vector
+databases for applications that need to manage vector data. However, we see a large room for improvement for generalized vector
+databases. In the long term, we are still positive that generalized
+vector databases can be improved up to the speed.
