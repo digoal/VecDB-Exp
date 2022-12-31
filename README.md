@@ -243,7 +243,7 @@ We summarize the root causes of the performance gap as follows and discuss how t
 
 * **RC#4: Memory-centric Page Structure.**
 
-* **RC#5: K-means Implementation.**
+* **RC#5: Clustering Implementation.**
 
 * **RC#6: SQL Evaluation Model.**
 
